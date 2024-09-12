@@ -24,14 +24,14 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
-    background: #e7eefb;
+    background: white;
 
 
 }
 
 
 *::selection {
-    background: #E27C39;
+    background: var(--colour-p6);
     color: #fff;
 
 }
@@ -87,11 +87,13 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 25px;
 
 }
 
 nav li {
     height: 50px;
+    font-size: 25px;
 
 
 }
@@ -163,13 +165,13 @@ nav li:first-child {
     /* note: add background url image */
 
 
-    display: ;
+    
 }
 
 
 
 .home h3 {
-    display: flex;
+    display: auto;
 }
 
 .home .content h3 {
@@ -200,7 +202,9 @@ nav li:first-child {
     text-align: center;
     padding: 1rem 0;
     line-height: 1.5;
-    background-color: #262f45;
+    background-color:  #f1c40fb3;
+    border-radius: 25px;
+    width: ;    
 }
 
 
@@ -209,11 +213,11 @@ nav li:first-child {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    color: #333;
+    color: #fff;
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
-    background-color: #fff;
+    background-color: #c8d9e6;
     align-items: center;
     font-weight: bold;
 
@@ -225,6 +229,7 @@ nav li:first-child {
 
 .section {
     padding: 2rem 9%;
+
 }
 
 .heading {
@@ -233,11 +238,13 @@ nav li:first-child {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);;
+    
+   
 }
 
 .heading span {
-    color: var(--pink);
+    color: #17616e;
 }
 
 
@@ -496,7 +503,9 @@ display: flex;
 
 
 
-
+.logo1 {
+    width: ;
+}
 
 
 
@@ -561,15 +570,119 @@ footer {
 
 
 
+/* CSS forms */
+
+
+
+
+
+.sanlexforms {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .sanlexforms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #007BFF;
+  }
+  
+  .sanlexforms label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .sanlexforms input, 
+  .sanlexforms select, 
+  .sanlexforms textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .sanlexforms input:focus, 
+  .sanlexforms select:focus, 
+  .sanlexforms textarea:focus {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    border: 1px solid #007BFF;
+    outline: none;
+  }
+  
+  .sanlexforms textarea {
+    resize: vertical;
+  }
+  
+  .sanlexforms button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .sanlexforms button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .sanlexforms button:active {
+    transform: translateY(0);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sanlexforms input[type="number"]::-webkit-outer-spin-button,
+  .sanlexforms input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .sanlexforms input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
 
 
 
 
 
 
-
-
-
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sanlexforms {
+      padding: 20px;
+    }
+  
+    .sanlexforms h2 {
+      font-size: 22px;
+    }
+  
+    .sanlexforms button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
 
 
 
@@ -670,3 +783,29 @@ footer {
 
  
 }
+
+
+
+@media (max-width: 480px) {
+    .sanlexforms {
+      padding: 15px;
+      margin: 15px auto;
+    }
+  
+    .sanlexforms h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .sanlexforms input, 
+    .sanlexforms select, 
+    .sanlexforms textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .sanlexforms button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

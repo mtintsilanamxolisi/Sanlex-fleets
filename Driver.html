@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be A Driver</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+
+    <header>
+    
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+               
+                <li><a href="/Booking.html">Book A Shuttle</a></li>
+                <li><a href="/partner.html" id="">Be A Partner</a></li>
+                <li><a href="/Driver.html" id="">Be A Driver</a></li>
+                <li><a href="/Contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="">
+                <li class="hideOnMobile"><a href="/index.html">Sanlex Shuttles</a></li>
+               
+                <li class="hideOnMobile"><a href="/Booking.html">Book Shuttle</a></li>
+                <li class="hideOnMobile"><a href="/partner.html">Be A Partner</a></li>
+                <li class="hideOnMobile"><a href="/Driver.html">Be A Driver</a></li>
+                <li class="hideOnMobile"><a href="/Contact.html">Contact Us</a></li>
+    <li class="menu_btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    
+            </ul>
+    
+           </nav>
+    
+    </header>
+
+    <section class="about">
+        <h1 class="heading">
+            Drive For<span> Us</span>
+        </h1>
+    
+        <div class="row">
+            <div class="video-container">
+                <video src="./Assets/driver.mp4" loop autoplay muted></video>
+               
+            </div>
+    
+            <div class="content">
+                <h3>Join Our Team of Professional Drivers</h3>
+                <p>Become a part of Sanlex Fleets! Register today to provide top-notch shuttle services for corporate clients and tourists across Gauteng.</p>
+    
+                     <p>Register as a Driver</p>
+                        <a href="/Booking.html" class="btn">Book Shuttle</a>
+            </div>
+        </div>
+    
+    
+    </section>
+    
+
+
+    <form class="sanlexforms" action="/submit_driver_registration" method="POST">
+        <h2>Driver Registration</h2>
+        
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+      
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+      
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+      
+        <label for="license">License Number:</label>
+        <input type="text" id="license" name="license" required><br>
+      
+        <label for="license_expiry">License Expiry Date:</label>
+        <input type="date" id="license_expiry" name="license_expiry" required><br>
+      
+        <label for="vehicle_type">Vehicle Type:</label>
+        <select id="vehicle_type" name="vehicle_type" required>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="minibus">Mini Bus</option>
+        </select><br>
+      
+        <label for="contactnumber">Contact Number:</label>
+        <input type="tel" id="contactnumber" name="contactnumber" required><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+      
+        <button type="submit">Register</button>
+      </form>
+      
+
+
+     <!--------------FOOTER---------------->
+
+     <section class="contact" id="contact">
+
+        <div class="main-contact">
+            <div class="contact-content">
+                <ul>
+                    <li><a href="#"></a>Enquire on Whatsapp</li>
+                    <li><a href="#"></a>Book Shuttle Online</li>
+                    <li><a href="#"></a>Contact</li>
+                    <li><a href="#"></a>About Us</li>
+                    <li><a href="#"></a>Get In Touch</li>
+                   
+                   
+                </ul>
+            </div>
+
+
+            <div class="contact-content">
+                <ul>
+                   
+                    <li><a href="#"></a>Services</li>
+                    <li><a href="#"></a>Whatsapp</li>
+                    <li><a href="#"></a>Facebook</li>
+                    <li><a href="#"></a>Instagram</li>
+                    
+                </ul>
+            </div>
+
+            <div class="contact-content">
+                <ul>
+                    <li><a href="#"></a>Monday - Friday: 9:00am - 4:30pm</li>
+                    <li><a href="#"></a>Saturday: 9:00am - 4:00pm</li>
+                    <li><a href="#"></a>Sunday: Closed</li>
+                
+                </ul>
+            </div>
+           
+        </div>
+
+        <p>Designed by Mainhost Group - Copyright(2024).</p>
+
+    </section>
+
+
+</body>
+</html>
