@@ -667,6 +667,39 @@ footer {
 
 
 
+  /* Footer Map */
+
+
+
+  /* Footer styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-map-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer-map {
+    width: 450px; /* Small initial size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.footer-map:hover {
+    transform: scale(2.5); /* Enlarge 2.5 times when hovered over */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Elegant shadow effect */
+    z-index: 10; /* Ensure the image appears above other elements */
+}
+
+
 
 
 
