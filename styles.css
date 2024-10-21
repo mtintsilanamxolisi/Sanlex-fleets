@@ -703,6 +703,38 @@ footer {
 
 
 
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    width: 60px; /* Initial size */
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Hover Effect */
+.whatsapp-button:hover {
+    transform: scale(1.2); /* Slightly enlarges the button */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adds a shadow effect */
+}
+
+
+
+
+
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .sanlexforms {
